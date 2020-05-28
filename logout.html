@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="./slide.html">SEUNGYUN</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="./introduce.html">Introduce<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./dariy.html">Diary</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./gb.html">Guest book</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Login
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="login.html">로그인</a>
+                <a class="dropdown-item" href="./logout.html">로그아웃</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">회원가입</a>
+              </div>
+            </li>
+            
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+      
+      <div class="card">
+        <div class="card-body">
+          <pre><h5>절대경로와 상대경로의 차이</h5>
+- 절대 경로란?
+    파일을 최초의 시작점으로 경유한 경로를 전부 기입하는 방식.
+    바탕화면에 위치한 test.txt 파일을 예시로 들어보자.
+    text.txt 파일의 절대 경로는 최상위 로트 디렉토리인 C 디렉토리로 부터 시작된다.
+    C:\Users\UserID\Desktop\test.txt
+
+- 상대 경로란?
+    현재 위치한 곳의 디렉토리에서 목적지까지의 경로
+    내가 바탕화면의 A 디렉토리의 위치라고 가정, 바탕화면 B 디렉토리안에 test.txt 파일을 찾는다고 가정.
+    ../B/text.txt
+
+- 결론
+    상대 경로는 기준 경로를 기준으로 절대 경로가 구성, 상대 경로로 파일의 위치를 찾을 수 있는
+    이유는 기준 경로가 절대 경로로 변환하여 OS에게 전달하기 때문이다.
+          </pre>
+        </div>
+      </div>
+      
